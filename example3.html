@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example 3</title>
+</head>
+<body>
+    <h1 id = "demo">Hello World</h1>
+    <script>
+           var x = 0;
+function change()
+ {
+ x = x +1;
+    
+        if (x%2==0)
+        {
+            document.getElementById("demo").innerHTML = "Powered by the DOM"
+        }
+   else if(x%2!=0)
+    {
+        
+            document.getElementById("demo").innerHTML = "Hello World"
+    }
+}
+       
+    </script>
+    
+    <input onclick="change()" type="button" value="Click" id="btn1"></input>
+    
+</body>
+</html>
